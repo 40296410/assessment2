@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="997926a5-8451-4d76-b52a-a65bdfb49def" name="assement2" linkedPackageId="0beceee2-908f-4825-8e13-1b358573fd43" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="06bdc08c-4ec4-4aed-bf4d-60ddce8b7d77">
+      <profileInstance Id="37a99522-0cb5-4483-9e6c-7a81204552ab" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d2e8332a-949e-458a-be47-b4b9241c74e3">
+      <profileInstance Id="0288536e-285e-4ee6-a830-cd00e0922906" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5ac12d6-1086-4def-8653-2767425077e4" name="Booking" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e28c3418-0d22-424a-bdef-504c0e65c16d" />
+        <targetEnds>
+          <association Id="f6d6dfe3-6c26-4017-b874-415a552ff9ab" isDerived="false" sourceEndRoleName="Booking" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="882d5e37-0d08-49e8-a189-90aab2b8d4ba" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16adc464-f361-494d-a7bd-1f7b1a981b52" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5c89c781-b3f0-4a4f-8fb5-82829b22ab05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0df6eba2-93d7-44ba-b45f-fa8c0947864e" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b69750a4-d0d6-45ef-9556-a22e6bd20dee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="090eae33-1aa3-4f62-9eb8-6de139317448" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="fbf3726b-e2fc-44c6-8aff-92042c66b2bb" name="PK booking id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2c8f3f16-da97-410b-b3ca-9c16e16df39f" />
+          </property>
+          <property Id="05b53beb-8eca-45fc-98a5-4f19f4fbab1d" name="Arr_date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92e85260-8907-43a6-b0ac-dc34cd299e59" />
+          </property>
+          <property Id="11658722-fe29-4ff7-9938-940331fa3c9b" name="No_nights" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86227de6-4bda-40dd-b30d-c89eadb46fad" />
+          </property>
+          <property Id="15a2c2ef-85ea-4493-8688-09a6bf1fe2cc" name="FK Cust_ref" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba1a3daf-1b20-4e4d-9cd3-16593d5f02f5" />
+          </property>
+          <property Id="23fd2103-3e0e-4e12-a3b0-658c55724c90" name="extra_meal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c4ba073d-45cb-4d52-adb7-a4b1ff5e1e52" />
+          </property>
+          <property Id="89a16b1c-0fde-4b0e-a18e-aac9e9b8e63b" name="extra_break" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3211e309-9cf4-4aa9-b90b-af9adf49e670" />
+          </property>
+          <property Id="c077f30b-0c35-46fe-b308-28517fa7abd3" name="extra_car" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="970129fb-92c5-48ca-bcd8-2207278f4838" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a6d52ce2-80df-4641-8bcb-a3bf5ec3ee40" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fa66b82-7e9f-446f-8f4a-1d916f444c67" />
+        <targetEnds>
+          <association Id="a05e0ea1-d948-47e7-b89d-49389b39bd30" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Booking" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b5ac12d6-1086-4def-8653-2767425077e4" LastKnownName="Booking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bda3e3f2-62be-4b0c-a55c-448d234ddd85" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="911f6e97-d0b0-4271-97f8-089fc5d19e7e" name="Lower" value="1">
+                      <elementDefinition Id="c3afa2fe-93be-4cf9-8351-15f43bc4f6b7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a2109628-adba-467b-8f19-2e275a219ea7" name="Upper" value="1">
+                      <elementDefinition Id="af5250aa-ad16-4a27-858c-72d630272c5f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="80455fe6-bf36-41c8-95f5-dd8596bdadd2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72dd5b39-c555-4fde-a3f3-64102852cd16" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="d5aad76f-d90d-4893-98c0-7a4047145c26" name="Lower" value="0">
+                      <elementDefinition Id="0a2c6a7d-a98a-4b17-942b-fefbed188294" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="817cf6d6-adb3-47a5-85e5-2a64be8e8b71" name="Upper" value="*">
+                      <elementDefinition Id="c7204ca6-54f7-4450-b7c5-8a1206510494" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="78c804e4-a2a2-463b-88d0-bf5de67fdd52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7dc49b5c-e840-4fed-aa7f-c532537ca6ac" />
+          </association>
+          <association Id="6d225c1d-121d-461c-b767-2ee227cacf0e" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="882d5e37-0d08-49e8-a189-90aab2b8d4ba" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e68d20f3-c7a6-44b4-8bd2-c325f54b213f" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7566d9d7-ce7f-496c-8d3a-2380029d0137" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4087aad-4153-4b5c-9dc9-a7f7c1a76a03" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45c371d9-ff62-4fd6-8ff9-935723fd04a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="34d76597-50e6-4e50-b036-480553c158ce" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a05fa011-af94-45e5-a9ad-da6ff7124695" name="fname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6437c50d-883b-49ba-921d-a08d45e90231" />
+          </property>
+          <property Id="f3d33187-b0c5-482f-afc1-c10dcb577612" name="lname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="67fa1e09-b1f6-44bb-8b5f-0a3b52eb462d" />
+          </property>
+          <property Id="6e31e839-21b8-452b-8b46-b9b4308ccf79" name="age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9785cd07-4d19-400a-8405-0153c1f918b3" />
+          </property>
+          <property Id="044370f2-94cf-48ef-997b-cd4bcc0cab52" name="passnum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e5a6a43-4890-4af4-afbf-c99bce2d5da2" />
+          </property>
+          <property Id="b99390b3-4e5f-4890-898f-44c13ccaf764" name="PK cust_ref" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc5e6d5f-dda7-4cec-9999-23d088867e38" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f56b428e-12ca-47cb-9b00-b6ce02f12ac1" name="Car_Hire" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="831494c6-6072-453c-95a9-4d002d0c50ad" />
+        <targetEnds>
+          <association Id="a60fc7e8-1ba9-44ed-9a56-0775ab302b6b" isDerived="false" sourceEndRoleName="Car_Hire" targetEndRoleName="Booking" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b5ac12d6-1086-4def-8653-2767425077e4" LastKnownName="Booking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50e0afb2-a689-460d-81ee-84411aa3cc83" name="Car_Hire" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="539a67f3-8c21-49cd-977b-a173b823ba08" name="Lower" value="0">
+                      <elementDefinition Id="3fc3666b-7ce7-4aa4-9c89-4845f6eee9f1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3a7f427e-bf26-4a5f-881d-f0e24ab8279c" name="Upper" value="1">
+                      <elementDefinition Id="9581f343-6047-48ce-987b-508cafb1161a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="afc0ce69-3cbe-4eda-92d8-409cb568ef9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="adf935da-cb6e-44ef-b219-6bed3322a7ba" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="acda8b91-24a4-403c-ad23-c735d122a679" name="Lower" value="1">
+                      <elementDefinition Id="32cecd54-b2ec-4cd4-968b-c44a71a84f0a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="799768b6-4712-4be5-9ab9-17161f5a738a" name="Upper" value="1">
+                      <elementDefinition Id="467b1b0b-68c6-407d-b9ee-f852a99e5764" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0e707502-c36d-4db2-adf6-14ee55b91907" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="72b77367-b79e-4f79-a9a9-3c41fbfccaa1" />
+          </association>
+          <association Id="fbb88974-c1c4-4008-99b1-595b18ec3936" isDerived="false" sourceEndRoleName="Car_Hire" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="882d5e37-0d08-49e8-a189-90aab2b8d4ba" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce7edc32-63b4-42db-be58-28d896301009" name="Car_Hire" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ef3d7067-a4b5-4f96-bf7d-9891edd14db2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2fb00c4-490a-43bd-992b-0cf7673a78bb" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2ae006fa-a870-42a5-a6c0-d14dd590ba8c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="10daf637-da31-41da-87d0-2d5a666b88d5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="012c78f5-0e0f-4f9f-b533-23d950cdfae2" name="named_driver" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24d2a659-c0b0-443f-b641-208a191b11ae" />
+          </property>
+          <property Id="bd32de6d-d381-491c-b202-67c47f95da76" name="start_date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eca8c84c-6293-4b41-88da-8c1afde19a02" />
+          </property>
+          <property Id="fa42a293-6f87-400d-b698-b1a60d64f44f" name="no_dates" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4edc7974-42e8-4e03-bad2-23a44a2ad30f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a707bbf4-d5ac-4904-b146-7653dd44a765" name="Guest" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03b9c63d-0a1c-424f-a4ca-1d8b9e5bda52" />
+        <targetEnds>
+          <association Id="dcb88810-29d8-40d0-9f38-d86920976683" isDerived="false" sourceEndRoleName="Guest" targetEndRoleName="Booking" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b5ac12d6-1086-4def-8653-2767425077e4" LastKnownName="Booking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1e1a553-58ef-4034-bfd4-67f5c12ba352" name="Guest" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="7b24631a-2906-4905-ba94-ad92146ec083" name="Lower" value="0">
+                      <elementDefinition Id="68f00e43-ca29-46f9-9af4-d580424a968f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1fe5fa03-6e83-433f-bedc-53cb209512e9" name="Upper" value="*">
+                      <elementDefinition Id="946327aa-89ed-4bdb-a1e7-e1e3fb3e8e90" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a4ce289d-b79a-412d-a37a-5a3aa2d4aad6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77a6e93d-0751-470b-a1d9-6b52a86650df" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="aa5f2ead-43b3-4b3e-9cb3-c7ab8287643a" name="Lower" value="1">
+                      <elementDefinition Id="0d369f0b-8eca-4524-af74-0e93ffebea93" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="652ed849-6b35-4204-83aa-54a5691f3290" name="Upper" value="1">
+                      <elementDefinition Id="d6e0e2c0-8bcf-4b6a-896a-0a7e507ebe58" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="18d1f6b6-49da-4696-9878-9fa4190853f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1f664c45-24c9-4642-848a-6892f352132d" />
+          </association>
+          <association Id="8d1d5ec0-f9ee-4f46-83a7-b6ef12d065b8" isDerived="false" sourceEndRoleName="Guest" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="882d5e37-0d08-49e8-a189-90aab2b8d4ba" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4e7073d-8c7d-403e-9a82-6b3f9afe4617" name="Guest" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ebd0fdf8-f434-453c-a81b-af397ce2de75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="205c452b-2378-464c-b489-f1977e639be7" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b81cbbd1-b7eb-462b-a63f-6b7893232556" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d25f05b-1a30-4390-8de8-56b1dfa731fe" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3df9c217-7ae9-416e-9257-f1776961cdd9" name="gf1name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b451e464-9788-40e1-9814-671ad93fba03" />
+          </property>
+          <property Id="a316b207-3e7b-43ce-b4f0-8bc8cd23c26f" name="g2fname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c61e31f5-2867-4cf4-bb84-772f7343c386" />
+          </property>
+          <property Id="589de08e-73b0-482f-872b-2338bb3b1a8e" name="g3fname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdf76b69-42a7-48b0-b260-9e63c9297345" />
+          </property>
+          <property Id="6febfe1b-c24f-4f5c-8436-8e0d3e429e51" name="g4fname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d4b0485e-6867-4524-8d3e-9bd24a330ad1" />
+          </property>
+          <property Id="34e7d763-7715-4b0f-9cfd-e5d0545005c1" name="g1age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4546fdfb-27ae-442f-a971-eef9c53fa20f" />
+          </property>
+          <property Id="05be1d22-399a-4aa5-b143-85e5a6276385" name="g2age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fa54f6d5-248f-41c3-9583-057e6dc2007a" />
+          </property>
+          <property Id="234988a0-8cde-4146-934f-3bc6083a9583" name="g3age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c73547cd-e017-4e3b-a63f-226b6bd1b6c4" />
+          </property>
+          <property Id="25a17140-ba2f-4cac-9aa7-3acc1694267b" name="g4age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b19750e-7ca6-4543-a212-2d4391b383e4" />
+          </property>
+          <property Id="698dd3cf-dc24-42bc-a529-0d73c80480e2" name="g1passnum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b47ee1db-fede-4abd-86e2-7d07e2523268" />
+          </property>
+          <property Id="b57953e4-40e8-4a64-b189-0174899fb792" name="g2passnum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c7dd57f-5f49-414a-8849-c079398fb89f" />
+          </property>
+          <property Id="5bb01392-3e16-4e06-bae0-2982dc6fc966" name="g3passnum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab8b4627-503e-4040-bc38-80fe94f68239" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="882d5e37-0d08-49e8-a189-90aab2b8d4ba" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c38ace81-9c32-46e2-8ee9-455b7c5d4676" />
+        <ownedOperationsInternal>
+          <operation Id="6f9c3ce4-f2a1-4c4c-97ae-f48fad407048" name="ClearCustomer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="de8033bc-9f9a-4271-bf60-f8cd9a3c2903" />
+          </operation>
+          <operation Id="49b428fe-6b1c-4aa5-91f6-1156fb4c1cb2" name="countextras" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="edf87dec-bc06-4cd3-b0e4-0ba3150343d6" />
+          </operation>
+          <operation Id="ca163c25-5a12-406e-a886-9ae49ebe878a" name="deletebook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="39a2f0eb-ea45-43f6-bb39-4e575a18c4b3" />
+          </operation>
+          <operation Id="fdaaeee1-258d-4cf9-9079-8baeac1d1a42" name="editbook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17c7aaa4-d5b0-45e0-8800-bcff0bb2e40b" />
+          </operation>
+          <operation Id="82e45e26-72ae-4ddc-9570-77bd56346120" name="editguest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f2dd1606-1f33-49aa-aaed-65fb9a6f1b00" />
+          </operation>
+          <operation Id="b3d106b9-1c31-4ba7-9665-b2c610856840" name="editdriver" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fcb86b3a-9f56-43cb-8af6-18142d770976" />
+          </operation>
+          <operation Id="b6b4cd87-d0ae-47ad-86e8-6f7ec5bc9203" name="adddriver" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aa008b91-d99c-41e9-8fba-f96556f9769c" />
+          </operation>
+          <operation Id="6eb6759a-8b3d-410a-b7ac-fb9558d0e85b" name="addguest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6910893e-2cfb-4dab-bdd4-9db7c54b39cc" />
+          </operation>
+          <operation Id="7ef08c33-adf6-4002-ace1-8b557160e882" name="disguest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c2ebfe10-6294-45f0-8b40-2283eba45f94" />
+          </operation>
+          <operation Id="ea773f33-4c56-4ea0-905a-df3b08d55ad2" name="makebook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="157dbad8-62c6-4a0b-bf11-00bdb56af7bb" />
+          </operation>
+          <operation Id="d9b32751-39e1-40b6-be58-0f93d4a1b286" name="custedit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="296a844b-9939-439e-a6a7-73a07ccc3463" />
+          </operation>
+          <operation Id="fd501177-84b9-4c39-8a3a-a8754f8e01ff" name="custsearch" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="129d951a-8503-4b52-bd2b-184c9230aa9d" />
+          </operation>
+          <operation Id="be38371e-e72f-4b05-9485-77483324a283" name="custdelete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bd164899-1aaa-4057-9f1f-008905603a16" />
+          </operation>
+          <operation Id="35f43335-104a-438e-ab80-5eec72963315" name="cleatboxes_book" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8899ad3-078f-4169-afa3-ed1b502a3e7e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0beceee2-908f-4825-8e13-1b358573fd43" name="assessment2model">
+    <elementDefinition Id="edda8705-593d-470a-83e9-21c968926b26" />
+  </package>
+</logicalClassDesignerModel>

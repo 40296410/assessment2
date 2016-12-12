@@ -1,0 +1,14 @@
+﻿<Window x:Class="assessment2.InvoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InvoiceWindow" Height="300" Width="300">
+    <Grid>
+        <Label Content="Room Cost:" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="Extra Cost:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label Content="Total Cost:" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.211,-0.615"/>
+        <Label x:Name="Inv_roomcost" Content="Label" HorizontalAlignment="Left" Margin="96,28,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="Inv_extracost" Content="Label" HorizontalAlignment="Left" Margin="96,59,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="Inv_totalcost" Content="Label" HorizontalAlignment="Left" Margin="96,90,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
